@@ -11,7 +11,6 @@ rl.question("What is the name if a real person? ", (answer) => {
   rl.setPrompt(`What would ${realPerson.name} say? `)
   rl.prompt();
   rl.on('line', (saying) => {
-
     realPerson.sayings.push(saying.trim());
     if(saying.toLowerCase().trim() === 'exit') {
       rl.close();
